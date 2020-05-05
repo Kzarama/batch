@@ -1,9 +1,8 @@
 :: make push git
-title "upload to github"
 @echo off
+title upload to github
 git add .
-echo enter the message:
-set /p mes
-git commit -m mes
-git push
+set /p mes= enter the message:
+git commit -m " %mes% "
+::git push
 pause
